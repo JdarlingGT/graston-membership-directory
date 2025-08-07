@@ -1,0 +1,13 @@
+name = "graston-membership-directory"
+main = "src/index.ts"
+compatibility_date = "2023-03-10"
+
+# Put your generated id from wrangler here
+kv_namespaces = [{ binding = "KV_KEYVALUE", preview_id = "$PREVIEW_ID", id = "c9d84fd7d1314d37ab37eae765738b05" }]
+
+[vars]
+# Put your secret variable name here as to not forget about them
+# - API_KEY
+
+[triggers]
+crons = ["0 7 * * *"]
