@@ -2,8 +2,17 @@ name = "graston-membership-directory"
 main = "src/index.ts"
 compatibility_date = "2023-03-10"
 
-# Put your generated id from wrangler here
-kv_namespaces = [{ binding = "KV_KEYVALUE", preview_id = "$PREVIEW_ID", id = "c9d84fd7d1314d37ab37eae765738b05" }]
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "graston-membership-db"
+database_id = "b13a3aa7-e5cc-4d21-8e86-ef9c90705be4"
+
+# KV Namespace
+[[kv_namespaces]]
+binding = "KV_KEYVALUE"
+preview_id = "$PREVIEW_ID"
+id = "c9d84ffd7d1314d37ab37eae765738b05"
 
 [vars]
 # Put your secret variable name here as to not forget about them
